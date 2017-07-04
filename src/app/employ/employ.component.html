@@ -1,0 +1,25 @@
+<h2>Empleados registrados</h2>
+<div id="responsive" class="section scrollspy">
+    <div class="row">
+        <div class="col s12">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Identificación</th>
+                        <th>Email</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let item of employs">
+                    <tr>
+                        <td>{{item.employName}} {{item.employLastName}}</td>
+                        <td>{{item.employIdentification}}</td>
+                        <td>{{item.employEmail}}</td>
+                        <td>{{item.employPosition}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
